@@ -1,0 +1,165 @@
+:root {
+  --primary: #ff9800;
+}
+
+nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+::selection {
+  color: white;
+  background-color: #ff9800;
+}
+
+blockquote {
+  border-left-color: #ff9800;
+}
+
+.color-inherit {
+  color: inherit;
+}
+
+.overflow-none {
+  overflow: hidden;
+}
+
+.overflow-x-none {
+  overflow-x: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+.font-large {
+  font-size: 2.92rem;
+}
+
+/* header{
+  position: relative;
+}
+header > svg {
+  position: absolute;
+  top: 0;
+  left: 100%;
+} */
+
+.p-relative {
+  position: relative;
+}
+
+#section-one {
+  min-height: 90vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 1500px;
+  max-width: 96%;
+
+  position: relative;
+}
+
+#section_after {
+  position: absolute;
+  content: "";
+  right: -20%;
+  left: -20%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 75px;
+  background-size: 75px 100%;
+  background-image: linear-gradient(135deg, #263238 25%, transparent 25%),
+    linear-gradient(225deg, #263238 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+@media (max-width: 768px) {
+  .text-center-sm {
+    text-align: center;
+  }
+}
+
+#section-two {
+  position: relative;
+  top: 0;
+  width: 110%;
+  left: -4%;
+}
+
+/* medium everything bigger than 768px */
+@media (min-width: 768px) {
+  #section-two {
+    position: relative;
+    top: -150px;
+    left: 0%;
+    width: 102%;
+  }
+}
+
+/* large everything bigger than 992px */
+@media (min-width: 992px) {
+  #section-two {
+    left: 0%;
+    width: 102%;
+  }
+}
+
+.css_separator_generator_2 {
+  position: absolute;
+  top: 900px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background: #263238;
+  z-index: -50;
+  transform: skewY(-17deg);
+  transform-origin: top left;
+}
+.css_separator_generator_3 {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #263238;
+  z-index: 5000;
+  transform: skewY(17deg);
+  transform-origin: top left;
+}
+
+@media (min-width: 992px) {
+  .res-img-one {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .res-img-one > img {
+    margin-top: -40%;
+  }
+}
+@media (min-width: 1200px) {
+  .pe-lg-custom {
+    padding-right: 120px;
+  }
+}
+
+.carousel-item {
+  /* background-color: cadetblue; */
+}
+
+.carousel-item > img {
+  max-width: 200px;
+}
+
+.carousel .indicators .indicator-item {
+  background-color: gray;
+  font-size: 20rem;
+}
+.carousel .indicators .indicator-item.active {
+  background-color: var(--primary);
+}
