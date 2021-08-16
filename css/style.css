@@ -1,0 +1,112 @@
+.backgroundImage-set2 {
+  background-position: center 10%;
+  background-size: 100% auto;
+}
+.backgroundImage {
+  background-position: center 40%;
+  background-size: auto 100%;
+}
+/* 100vh + 20vh {this 20 veiw height is the becouse this div have height of 80vh if it has 100vh this 20vh should be 0vh}  */
+@media (min-width: 120vh) {
+  .backgroundImage {
+    background-size: 100% auto;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.abs-top {
+  position: absolute;
+}
+.container-nav {
+  min-width: 100%;
+}
+.container-nav > header {
+  background: rgba(0, 0, 0, 0.336);
+}
+
+.overlay {
+  height: 100%;
+  min-height: 250px;
+  min-width: 100%;
+  background: rgba(0, 0, 0, 0.336);
+}
+
+.middle-cards > .col {
+  background: linear-gradient(30deg, rgb(250, 250, 250), rgb(197, 197, 197));
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#intro-con {
+  min-height: 80vh;
+}
+
+#section3 {
+  margin-bottom: -9rem;
+}
+
+#section4 {
+  padding-top: 11rem !important;
+}
+
+#section5-con {
+  min-height: 50vh;
+}
+
+#section5-background {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* .jet-back {
+  height: 100%;
+  min-height: calc(20rem);
+  overflow: hidden;
+}
+.jet-front {
+  background: linear-gradient(90, rgba(0, 0, 0, 0), rgbargba(0, 0, 0, 0.61));
+  transform: translateY(-100%);
+  transition: all 0.8s ease-out;
+}
+.jet-flip {
+  transform: translateY(0%);
+} */
+
+.jet-height {
+  height: 18rem;
+}
+.jet-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.jet-back {
+}
+.jet-front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90, rgba(0, 0, 0, 0), rgbargba(0, 0, 0, 0.61));
+  transform: translateY(-100%);
+  transition: all 0.8s ease-out;
+}
+.jet-flip {
+  transform: translateY(0%);
+}
+
+.log-footer {
+  /* background: linear-gradient(45, rgba(12, 165, 170, 0.61), rgba(209, 20, 20, 0.61)); */
+}
+
+.text-thick {
+  font-weight: 300;
+  font-size: 3rem;
+}
